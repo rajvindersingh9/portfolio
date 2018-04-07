@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans');
+
+
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box; 
+    
+}
+
+body{ font-family: Lato; color: #777; padding: 20px;   }
+header{ height: 94vh; background-image: linear-gradient( rgba(36,41,45,0),rgba(36,41,45,0), rgba(36,41,45,0.15) ), url(../image/bg/1.jpeg); background-size: cover; background-position: center; clip-path: polygon(0 0,100% 0,100% 80vh,0 100%); position: relative; }
+.myNameDiv{ position: absolute; color: #24292d; top: 50%; left: 50%; transform: translate(-50%,-25%);   }
+.nameDiv{ font-size: 2.50em; letter-spacing: 0.15em; text-transform: uppercase; font-weight: bold; animation: moveLeft 3s 0.5s ; backface-visibility: hidden;    }
+.nameSubLine{ letter-spacing: 0.32em; font-size: 1.39em; text-transform: uppercase; animation: moveRight 3s 0.5s; margin-bottom: 60px;   }
+
+.animateBtn{padding: 15px 45px;  display: inline-block; text-align: center;  border-radius: 50px; cursor: pointer; transition: all 0.2s; position: relative; animation: bottomAnimation 2s ease-out 0.5s;    }
+
+.animateBtn::after{content: " "; display: inline-block; height: 100%; width: 100%; border-radius: 100px; position: absolute; top: 0px; left: 0px; z-index: -1; transition: all 0.4s;   }
+
+.animateBtn:hover::after{ transform: scale(1.8); opacity: 0; }
+
+.animateBtn a:link,.animateBtn a:visited{ text-transform: uppercase; text-decoration: none; }
+
+.btn-white, .btn-white a{ background-color: #FFF; color: #24292d;  }
+
+.btn-white::after{ background-color: #FFF; }
+
+.animateBtn:hover{ transform: translateY(-3px); box-shadow: 0px 10px 20px rgba(0,0,0,0.25);   }
+
+.animateBtn:active{ transform: translateY(-1px); box-shadow: 0px 5px 10px rgba(0,0,0,0.25);  }
+
+.bannerPorfolioLink{ text-align: center; }
+
+@keyframes moveLeft{
+    
+    0%{ opacity: 0; transform: translateX(-100px); }
+    
+    80%{
+        
+        transform: translate(20px);
+    }
+    
+    100%{ opacity: 1; transform: translate(0px); }
+    
+}
+
+@keyframes moveRight{
+    
+    0%{ opacity: 0; transform: translateX(100px); }
+    
+    80%{
+        
+        transform: translate(-20px);
+    }
+    
+    100%{ opacity: 1; transform: translate(0px); }
+    
+}
+
+@keyframes bottomAnimation{
+    
+    0%{ opacity: 0; transform: translateY(50px)}
+    80% { transform: translateY(-10px)}
+    100%{ opacity: 1; transform:translate(0)}
+    
+}

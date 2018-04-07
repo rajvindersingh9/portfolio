@@ -1,0 +1,17 @@
+.contactPageTitle{ text-shadow: 1px 1px 0px #000; margin-top: -50px;  }
+
+.contactDiv{ margin-top: 75px; 
+    text-align: center; color: #FFF; font-size: 1.5em; 
+    
+    & .contactImage{ text-align: center; margin-bottom: 10px; 
+        
+         & img{ background-color: #FFF; padding: 15px; border-radius: 50%;   }
+        
+        & .contactDivDetail{ text-align: center; color: #FFF; line-height: 2em;  }
+    }
+    
+    
+    
+}
+
+.rowContact{ margin-bottom: 25px; }

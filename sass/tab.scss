@@ -1,0 +1,21 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    body{ padding: 10px; }
+    .myNameDiv{ left: 18%; }
+    header{ height: 80vh; }
+    
+    #specialist{ padding-top: 1em; z-index: 9;  }
+    
+    .createDivImage img{ height: 100px; }
+
+        .createDivHeading{ font-size: 1.5em; }
+    .createDiv{ padding: 5px 20px;  }
+    #aboutUs{ padding-top: 25em; }
+    .nameDiv{ font-size: 2.7em; text-align: center; }
+    .nameSubLine{ font-size: 1.5em}
+    #myWork{ position: relative; z-index: 3; padding: 5px 0px;  }
+    .profilePageHeading{ margin-top: 1vh; }
+    .hidden-xs{ display: none; }
+    .contactDiv{ font-size: 1em; }
+    .contactPageTitle{ margin-top: -100px; margin-left: 75px;  }
+}

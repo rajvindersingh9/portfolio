@@ -1,0 +1,11 @@
+#clientReview{  background-color: #efefef; position: relative; height: 600px; overflow: hidden; }
+.clientReviewUsHeading{ text-align: center; color: #FFF; margin-top: 15px; margin-bottom: 40px; padding-top: 10px;}
+.videoReview{ position: absolute; top: 0px; right: 0px; left: 0px; z-index: 0;  }
+.reviewText{ position: absolute; z-index: 9; top: 0px; right: 0px; left: 0px;  }
+.videoReview::after{ background-color: rgba(#24292d,0.5); content: ""; top: 0px; left: 0px; right: 0px; bottom: 0px; position: absolute;   }
+
+.reviewDiv{ background-color: rgba(#000, 0.5); margin: 15px 5px;  padding: 40px; color: #FFF;  font-size: 1.2em;transform: skewX(-25deg); }
+
+.reviewDiv p{transform: skewX(25deg); text-align: center; }
+.reviewDiv .fa-quote-left{text-align: left; }
+.reviewDiv .fa-quote-right{ text-align: right; }

@@ -1,0 +1,85 @@
+.cvView{ background-color: #FFF; color: #24292d; padding: 70px 70px 70px 70px; margin: 20px 100px;   }
+
+.cvName { font-weight: 900; text-align: center; font-family: Paytone One ; text-transform: uppercase;  color: #24292d; font-size: 2.25em; padding-bottom: 2px; padding-top: 25px;           }
+.leftSideHeading{ font-size: 1.25em;   }
+.borderBottomRow{ border-bottom: 1px solid #24292d; padding-bottom: 8px; margin-bottom: 8px;  }
+.cvAddress{ text-align: center; margin-bottom: 25px;  }
+.rowNew{ margin-top: 15px; }
+.footerMargin{ margin-top: 100px; }
+.nameFotter{ text-align: right; font-weight: bold; margin-bottom: 250px; margin-top: 50px;  font-size: 1.2em;   }
+.cvAddress{ font-size: 1em; }
+.myskills{
+    
+    & div{
+        
+        & div{
+            
+            b{ padding-top:  15px; }
+        }
+    }
+}
+
+.borderTop{ padding: 1px; background-color: #24292d; margin-bottom: 15px;  }
+
+.printIconTopMain div{ display: inline-block; background-color: #FFF; border-radius: 50%; padding: 15px; margin-right: 15px; box-shadow: 0px 5px 5px #000;      }
+
+.lastRow{ margin-top: 100px; margin-bottom: 100px; }
+.footerNameCV{ font-weight: bold; text-align: right; }
+
+
+/*popup code*/
+
+#forwardResume{ opacity: 0; visibility: hidden; 
+transition: all 0.2s; 
+    
+    
+    &:target{ opacity: 1; visibility: visible; }
+
+    
+    &:target .cVcontent{ transform: translate(-50%, -50%) scale(1); opacity: 1;  }
+}
+
+
+.popup_close{ 
+    &:link, &:visited{
+        color: #000; 
+        position: absolute; 
+        top: 0.5em; right: -1em; 
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 2.5em;
+        transition: all 0.2s;     
+    }
+}
+
+
+.popUpCV{
+    height: 100vh; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 3000; 
+   
+    
+    
+    
+    & .cVcontent{
+        
+        @include absCenter; 
+        width: 75%; 
+        height: 30em; 
+        background-color: #FFF; 
+        border-radius: 3px; 
+        
+        transform: translate(-50%, -50%) scale(0.5);
+        transition: all 0.25;  
+        
+        
+        & .attachedPDF{
+            color: #24292d; margin-bottom: 25px; margin-top: 25px;    
+            
+        }
+    }
+}

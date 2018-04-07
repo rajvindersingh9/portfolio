@@ -1,0 +1,50 @@
+@media screen and (max-width:768px){
+    
+    .createDivImage img{ height: 150px; }
+    .createDivHeading{ font-size: 1.8em; }
+    
+    .contactDiv{ font-size: 1.2em; }
+    
+    .popup_close{ 
+    &:link, &:visited{
+       
+        top: 0em; right: 0.5em; 
+        
+    }
+}
+    
+    header{ height: 80vh;}
+    .contactPageTitle{ margin-top: 50px; }
+    .myNameDiv{left: 5%; transform: translate(5%, -15%); }
+    .nameDiv{ font-size: 1.8em; }
+    .nameSubLine{ font-size: 1em; margin-bottom: 15px;  }
+    .animateBtn{ padding: 8px 20px; }
+    body{  padding: 20px;  }
+   
+    #specialist{ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); padding: 12em 0px 0px 0px;   }
+    .aboutUsPara{ padding: 2px 2px; }
+    .aboutUsLines{ font-size: 1em; }
+    .contactFormStart{ padding: 15px; }
+    .contactForm{ margin: 1em 0em; }
+    .cvAddress{ font-size: 0.85em; }
+    #clientReview{ display: none; }
+    .buttonSeeMore{ margin: 10px 0px; }
+    .navigation_button{ top: 1em; right: 1em; width: 4em; height: 4em; }
+    .navigation_background{ top: 1.5em; right: 1.5em;}
+    .cvView{ padding: 15px; margin: 0px 2.5px 20px 2.5px;  }
+    #cvViewTwo{ padding: 15px; margin: 0px 5px;  }
+    .mobileMar{ margin-top: 15px; }
+    .footerMargin{ margin-top: 10px; }
+    .nameFotter{ margin-bottom: 50px; margin-top: 50px; }
+    .navigation_icon{ margin-top: 2em; width: 2.5em; 
+     &::before,
+        &::after{
+            width: 2.5em; 
+             
+    }
+    }
+    
+    .borderTop{ padding: 0.5px; background-color: #24292d; margin-bottom: 15px;  }
+    
+    .greySectionRes, .whiteSectionRes{ padding: 10px; }
+}

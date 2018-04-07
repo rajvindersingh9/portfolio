@@ -1,0 +1,40 @@
+
+header{ height: 94vh; background-image: linear-gradient( rgba($overColor,0),rgba($overColor,0), rgba($overColor,0.25), rgba($overColor,1) ), url(../image/bg/1.jpeg); background-size: cover; background-position: center; clip-path: polygon(0 0,100% 0,100% 75vh,0 100%); position: relative; z-index: 2;     }
+.myNameDiv{ position: absolute; color: #24292d; top: 50%; left: 50%; transform: translate(-50%,-15%);   }
+.nameDiv{ font-size: 2.50em; letter-spacing: 0.15em; text-transform: uppercase; font-weight: bold; animation: moveLeft 3s 0.5s ; backface-visibility: hidden;     }
+.nameSubLine{ letter-spacing: 0.32em; font-size: 1.39em; text-transform: uppercase; animation: moveRight 3s 0.5s; margin-bottom: 60px;   }
+
+
+
+
+.animateBtn{padding: 15px 45px;  display: inline-block; text-align: center;  border-radius: 50px; cursor: pointer; transition: all 0.2s; position: relative; animation: bottomAnimation 2s ease-out 0.5s;  
+
+    &::after{content: " "; display: inline-block; height: 100%; width: 100%; border-radius: 100px; position: absolute; top: 0px; left: 0px; z-index: -1; transition: all 0.4s;   }
+    
+    &:hover::after{ transform: scale(1.8); opacity: 0; }
+    
+    & a:link{ text-transform: uppercase; text-decoration: none; }
+    
+    & a:visited{ text-transform: uppercase; text-decoration: none; }
+    
+}
+
+
+.btn-white{
+    background-color: #FFF; color: #24292d;
+    
+    & a{background-color: #FFF; color: #24292d;}
+    
+    &::after{ background-color: #FFF; }
+
+   &:hover{ transform: translateY(-3px); box-shadow: 0px 10px 20px rgba(0,0,0,0.25);   } 
+    
+    &:active{ transform: translateY(-1px); box-shadow: 0px 5px 10px rgba(0,0,0,0.25);  }
+}
+
+.createDivImage img{ height: 200px; }
+
+
+
+
+.bannerPorfolioLink{ text-align: center; }

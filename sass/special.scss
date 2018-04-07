@@ -1,0 +1,12 @@
+#specialist{ background-color: #24292d; padding: 12em 0px 15em 0px; margin-top: -25vh;  clip-path: polygon(0 0,100% 0,100% 110vh,0 100%); position: relative; z-index: 1; }
+.headingSpecial{ text-align: center; color: #FFF; }
+.createDiv{ background:  linear-gradient( 10deg, rgba(#f7f7f7, 1) 48%, #FFF 48% );  color: #24292d;  padding: 5px 40px; margin-top: 50px; margin-bottom: 50px; border-radius: 1px;    
+    & div {
+        & h2{ padding: 0px 0px; }
+        
+    }
+}
+.createDivImage{ text-align: center; }
+
+.createDivHeading{ text-align: center; color: #24292d; font-size: 2em; border-bottom: 1px solid #efefef; padding-bottom: 4px; margin-bottom: 4px;    }
+.createDivDes{ text-align: center; padding: 10px 0px;  }
